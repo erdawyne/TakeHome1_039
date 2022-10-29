@@ -6,6 +6,9 @@
 package ws.a.takehome;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 
 /**
@@ -14,5 +17,14 @@ import org.springframework.stereotype.Controller;
  */
 @Controller
 public class myyController {
+    
+    //@RequestMapping("/nextpage")
+    //@ResponseBody
+    //public String tugas(
+            
+            //@RequestParam(value="varA") String nama,
+            //@RequestParam(value="varB") String alamat
+    //)
+            
     
 }
