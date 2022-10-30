@@ -38,11 +38,11 @@ public class myyController {
             @RequestParam(value="varB") String alamat,
             @RequestParam(value="varC") String gambar,
             Model kurir
-            )()
+            )(
+                kurir.addAttribute("paket1", nama);
     
+                
     
     
             
-            
-    
 }
