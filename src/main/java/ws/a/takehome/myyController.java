@@ -19,30 +19,35 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class myyController {
     
-    @RequestMapping("/nextpage")
+    @RequestMapping("/save")
     @ResponseBody
     public String tugas(
             
             @RequestParam(value="varA") String nama,
             @RequestParam(value="varB") String alamat,
-            @RequestParam(value="varC") String gambar
-    )(
-            return result ="";
-    
+            @RequestParam(value="varC") String gambar,
+   
+            return result = "";
     )
+    
+    
+    
     
     @RequestMapping("/nextpage")
     
     public String next(
-    @RequestParam (value = "varA") String nama,
+            @RequestParam (value = "varA") String nama,
             @RequestParam(value="varB") String alamat,
             @RequestParam(value="varC") String gambar,
             Model kurir
-            )(
+            ){
                 kurir.addAttribute("paket1", nama);
+                kurir.addAttribute("paket2", alamat);
+                
+                return "view";
+                
+    }
     
                 
-    
-    
-            
+
 }
